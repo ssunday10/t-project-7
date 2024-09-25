@@ -6,20 +6,6 @@ const bell = document.querySelector('.bell-icon');
 bell.addEventListener("click", () => {
     const tooltip = document.querySelector('.tooltip span');
     tooltip.style.visibility = "visible";
-
-
-    // if (tooltip.style.visibility = "none") {
-    //     tooltip.style.visibility = "visible";
-    // } else {
-    //     tooltip.style.visibility = "none";
-    // }
-
-
-    // if(tooltip.style.display === "none"){
-    //     tooltip.style.display = "block";
-    // } else {
-    //     tooltip.style.display = "none";
-    // }
 });
 
 
@@ -48,6 +34,7 @@ alertBanner.addEventListener('click', e => {
 
 
 // Traffic Chart: Daily / Weekly & Monthly
+
 let trafficCanvas = document.getElementById('traffic-chart');
 let trafficData = {
 
@@ -199,34 +186,11 @@ send.addEventListener('click', () => {
 });
 
 
-
-// SETTINGS AREA
-
-// Local Storage Code Area
-
-// Variable Declaration
+// Variables
 let email = document.querySelector('#Email');
 let profilePublic = document.querySelector('#Profile-To-Public');
 let timezone = document.querySelector('#timezone');
 let save = document.querySelector('#save');
-
-
-// Event Listener for email slider option. This is one way to attempt, I think.
-// email.addEventListener('click', function() {
-//     email.toggle.classList = true;
-// });
-
-
-
-// profilePublic.addEventListener('click', function(){
-//     profilePublic.toggle.classList = true;
-// });
-
-
-
-// if(email.checked){
-//     localStorage.change.classList = true;
-// }
 
 
 // Setting the local storage with setItem() method.
