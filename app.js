@@ -205,12 +205,17 @@ function setValues() {
 
 setValues();
 
+let email = document.querySelector("#email");
+let profilePublic = document.querySelector("#Profile-To-Public");
+let timezone = document.querySelector("#timezone");
+let save = document.querySelector("#save");
+
 
 // Setting the local storage with setItem() method.
 save.addEventListener('click', (e) => {
     const save = document.querySelector('#save');
     localStorage.setItem('email', JSON.stringify(email.checked));
-    localStorage.setItem('profileToggle', JSON.stringify(profileToggle.checked));
+    localStorage.setItem('profilePublic', JSON.stringify(profilePublic.checked));
     localStorage.setItem('timezone', timezone.value);
     console.log(localStorage);
 });
