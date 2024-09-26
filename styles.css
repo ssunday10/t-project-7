@@ -2,6 +2,18 @@
 	box-sizing: border-box;
 }
 
+.header {
+	grid-area: header;
+}
+
+.navigation {
+	grid-area: navigation;
+}
+
+.main {
+	grid-area: main;
+}
+
 
 
 /* Mobile css */
@@ -18,11 +30,6 @@
 						"main";
 	}
 
-	.header {
-		grid-area: header;
-	}
-	
-	
 
 	/* The main navbar */
 	.navbar {
@@ -163,12 +170,6 @@
 	.sidebar-nav-icons .settings {
 		height: 30px;
 		width: 30px;
-	}
-
-
-
-	.main {
-		grid-area: main;
 	}
 
 

@@ -187,27 +187,41 @@ send.addEventListener('click', () => {
 
 
 // Variables
-let email = document.querySelector('#Email');
-let profilePublic = document.querySelector('#Profile-To-Public');
-let timezone = document.querySelector('#timezone');
-let save = document.querySelector('#save');
+
+function setValues() {
+    // email toggle
+    const emailToggle = localStorage.getItem("email");
+
+    // profile toggle
+    const profileToggle = localStorage.getItem("profilePublic");
+
+    // Timezone list
+    const timeZone = localStorage.getItem("timezone");
+
+    document.getElementById("email").checked = emailToggle;
+    document.getElementById("Profile-To-Public").checked = profileToggle;
+    document.getElementById("timezone").value = timeZone;
+}
+
+setValues();
 
 
 // Setting the local storage with setItem() method.
-save.addEventListener('click', () => {
+save.addEventListener('click', (e) => {
     const save = document.querySelector('#save');
     localStorage.setItem('email', JSON.stringify(email.checked));
-    localStorage.setItem('profilePublic', JSON.stringify(profilePublic.checked));
+    localStorage.setItem('profileToggle', JSON.stringify(profileToggle.checked));
     localStorage.setItem('timezone', timezone.value);
+    console.log(localStorage);
 });
 
 
 // This is the 'press the cancel button to clear local storage'.
-cancel.addEventListener('click', () => {
-    const cancel = document.querySelector('#cancel');
-    let emailToggle = document.querySelector('.toggle-container #Email');
-    let profileToggle = document.querySelector('#Profile-To-Public');
-    let timezoneToggle = document.querySelector('#timezone');
+cancel.addEventListener('click', (e) => {
+    const cancel = document.getElementById('#cancel');
+    let emailToggle = document.getElementById('#email');
+    let profileToggle = document.getElementById('#Profile-To-Public');
+    let timezoneToggle = document.getElementById('#timezone');
 
     localStorage.removeItem('email');
     localStorage.removeItem('profilePublic');
