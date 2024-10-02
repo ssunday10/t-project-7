@@ -14,6 +14,39 @@
 	grid-area: main;
 }
 
+@keyframes ring {
+	0% { transform: rotate(0); }
+	1% { transform: rotate(30deg); }
+	3% { transform: rotate(-28deg); }
+	5% { transform: rotate(34deg); }
+	7% { transform: rotate(-32deg); }
+	9% { transform: rotate(30deg); }
+	11% { transform: rotate(-28deg); }
+	13% { transform: rotate(26deg); }
+	15% { transform: rotate(-24deg); }
+	17% { transform: rotate(22deg); }
+	19% { transform: rotate(-20deg); }
+	21% { transform: rotate(18deg); }
+	23% { transform: rotate(-16deg); }
+	25% { transform: rotate(14deg); }
+	27% { transform: rotate(-12deg); }
+	29% { transform: rotate(10deg); }
+	31% { transform: rotate(-8deg); }
+	33% { transform: rotate(6deg); }
+	35% { transform: rotate(-4deg); }
+	37% { transform: rotate(2deg); }
+	39% { transform: rotate(-1deg); }
+	41% { transform: rotate(1deg); }
+	43% { transform: rotate(0); }
+	100% { transform: rotate(0); }
+  }
+
+  .bell-icon:hover {
+	animation: ring 4s .7s ease-in-out infinite;
+	transform-origin: 50% 4px;
+}
+  
+
 
 
 /* Mobile css */
@@ -280,7 +313,7 @@
 	.Daily {
 		border-bottom: 1px solid lightgrey;
 		margin: 0;
-		padding: 0 0 15px 0;
+		padding: 0 0 15px 5;
 		width: 100%;
 	}
 	.Daily h3 {
@@ -292,6 +325,7 @@
 	}
 	.Daily #daily-chart {
 	 	padding: 0 0 0 5px; 
+		
 	}
 
 
@@ -316,7 +350,7 @@
 	.social-container-area {
 		margin: 0;
 		width: 100%;
-		padding: 20px 0 20px 0;
+		padding: 30px 0 30px 0;
 	}
 	.social-container-area h3 {
 		margin: 0 auto;
@@ -339,7 +373,7 @@
 		width: 40px;
 		height: 40px;
 		border-radius: 50%;
-		background-color: #1e2f97;
+		background-color: #7477BF ;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -469,15 +503,14 @@
 
 	/* NEW MEMBERS AREA */
 	.new-members-area {
-		border-top: 2px solid lightgrey;
-		border-width: 98px;
+		border-top: 1px solid lightgrey;
 		margin: 0 auto;
 		display: block;
 		width: 100%;
 	}
 	.new-members-area h3 {
 		margin: 0;
-		padding: 10px;
+		padding: 20px;
 		font-family: 'Martel Sans', sans-serif;
 		font-size: 17px;
 		font-weight: 600;
@@ -490,7 +523,7 @@
 		display: block;
 		margin: auto;
 		width: 95%;
-		padding: 10px 0 14px 0;
+		padding: 14px 0 14px 0;
 	}
 	.new-members-area .members-container:first-child {
 		border-top: none;
@@ -814,7 +847,7 @@
 	}
 }
 
-/* Tablet css **************************************************************/
+																			/* TABLET */
 @media screen and (min-width: 768px) {
 
 	.navbar {
@@ -839,6 +872,7 @@
 	.sidebar-nav-icons {
 		display: inline-block;
 	}
+
 	.sidebar-nav-icons ul {
 		display: inline-block;
 	}
@@ -908,19 +942,20 @@
 
 	
 
-	.Daily,
+	.daily,
 	.new-members-area,
 	.message-user-area {
 		grid-column: 1 / span 1;
+		border-bottom: 1px solid lightgrey;
 	}
 	.widget-container-half {
 		padding-left: 5px;
 	}
 
-	.Daily {
+	.daily {
 		border-right: 1px solid lightgrey;
 	}
-	.Daily h3 {
+	.daily h3 {
 		width: auto;
 		padding: 10px 0 10px 10px;
 	}
@@ -929,6 +964,7 @@
 	.recent-activity-area,
 	.settings-area {
 		grid-column: 2 / span 1;
+		border-bottom: 1px solid lightgrey;
 	}
 	.mobile-users-area h3 {
 		width: auto;
@@ -1011,12 +1047,16 @@
 		padding: 16px 0 0 0;
 		height: 44px;
 	}
+	.example {
+		color: #7477BF;
+	}
  
 
 
 	/* RECENT ACTIVITY AREA */
 	.recent-activity-area {
 		grid-column: 1 / span 2;
+		border-bottom: 1px solid lightgrey;
 	}
 	.recent-activity-area h3 {
 		padding: 10px 0 0 20px;
@@ -1085,11 +1125,18 @@
 		width: 46.0%;
 	}
 
+	#timezone {
+		width: 100%;
+		padding: 15px;
+		border-radius: 5px;
+		background-color: transparent;
+	}
+
 }
 
 
 
-/* DESKTOP VIEW */
+																			/* DESKTOP VIEW */
 @media screen and (min-width: 1024px) {
 
 	
@@ -1097,49 +1144,13 @@
 		display: grid;
 	}
 
-
-	.bell-icon:hover {
-		animation: ring 4s .7s ease-in-out infinite;
-		transform-origin: 50% 4px;
-	}
-	
-	  @keyframes ring {
-		0% { transform: rotate(0); }
-		1% { transform: rotate(30deg); }
-		3% { transform: rotate(-28deg); }
-		5% { transform: rotate(34deg); }
-		7% { transform: rotate(-32deg); }
-		9% { transform: rotate(30deg); }
-		11% { transform: rotate(-28deg); }
-		13% { transform: rotate(26deg); }
-		15% { transform: rotate(-24deg); }
-		17% { transform: rotate(22deg); }
-		19% { transform: rotate(-20deg); }
-		21% { transform: rotate(18deg); }
-		23% { transform: rotate(-16deg); }
-		25% { transform: rotate(14deg); }
-		27% { transform: rotate(-12deg); }
-		29% { transform: rotate(10deg); }
-		31% { transform: rotate(-8deg); }
-		33% { transform: rotate(6deg); }
-		35% { transform: rotate(-4deg); }
-		37% { transform: rotate(2deg); }
-		39% { transform: rotate(-1deg); }
-		41% { transform: rotate(1deg); }
-		43% { transform: rotate(0); }
-		100% { transform: rotate(0); }
-	  }
-	  
-	
-
-
 	.Dashboard-area .headline {
 		margin: 0;
 		padding-left: 11px;
 		width: 98%;
 	}
 	.alert {
-		width: 98%;
+		width: 100%;
 	}
 
 
@@ -1172,17 +1183,19 @@
 
 
 	/* DOUGHNUT CHART AREA */
- 	.Daily h3 {
+ 	.daily h3,
+	.mobile-users-area h3 {
 		width: 100%;
 		padding: 10px 0 20px 15px;
  	}
 
 
 	/* MOBILE USERS CHART AREA */
-	.mobile-users-area h3 {
+	
+	/*.mobile-users-area h3 {
 		width: 100%;
 		padding: 10px 0 20px 15px;
-	}
+	} */
 	
 
 
