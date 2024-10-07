@@ -173,12 +173,13 @@ let mobileChart = new Chart(mobileCanvas, {
 const user = document.getElementById("userField");
 const message = document.getElementById("messageField");
 const send = document.getElementById("send");
+
 send.addEventListener('click', () => {
-    if ( user.value === "" && message.value === "" ){
+    if (user.value === "" && message.value === " "){
         alert("Please fill out user and message fields before sending");
-    } else if (user.value === "") {
+    } else if (user.value === " ") {
         alert("Please make sure you fill in the user field");
-    } else if (message.value === ""){
+    } else if (message.value === " "){
         alert("Please fill in the message field before sending");
     } else {
         alert(`Message successfully sent to: ${user.value}`);

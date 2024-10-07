@@ -980,18 +980,20 @@
 	}
 
 
+	
+
 	.social-container-area {
 		padding: 0;
 		margin: 0 0 9px 0;
 	}
-	.social-container-area .social-heading {
+.social-container-area .social-heading {
 		padding: 8px 0 0 4px;
 	}
-	.social-cards-container {
+.social-cards-container {
 		display: flex;
 		margin: 0 17px 0 17px;
 	}
-	.social-cards-container section {
+.social-cards-container section {
 		margin: 5px;
 	}
 	.social-cards-container .social-text h3 {
@@ -1003,6 +1005,7 @@
 	.social-cards-container .social-text p {
 		font-size: 36px;
 	}
+	
 
 
 
@@ -1189,15 +1192,25 @@
 		padding: 10px 0 20px 15px;
  	}
 
-
+	.daily-traffic {
+		grid-column: 1;
+	}
 	/* MOBILE USERS CHART AREA */
-	
-	/*.mobile-users-area h3 {
-		width: 100%;
-		padding: 10px 0 20px 15px;
-	} */
-	
+	.mobile-users-area {
+		grid-column: 2;
+		padding: 0 0 20px 19px;
+		margin: 0;
 
+	}
+
+	#daily-chart, #mobile-doughnut-chart {
+		width: 320px;
+		height: 200px;
+	}
+
+	.widget-container-half {
+		float: left;
+	}
 
 	/* SOCIAL STATS AREA */
 	.social-container-area .social-heading {
@@ -1208,13 +1221,14 @@
 		margin: 0 14px 0 14px;
 	}
 	
+	/* New Members */
 	
 	.new-members-area {
 		border-right: 1px solid lightgrey;
 		grid-column: 1;
 	}
-	.new-members-area .heading {
-		padding-left: 19px;
+	.new-members-area {
+		padding: 19px 1;
 	}
 	.new-members-area .members-container {
 		height: 150px;
@@ -1236,25 +1250,26 @@
 
 	.recent-activity-area {
 		grid-column: 2;
+		padding: 20px 0;
 	}
 	.recent-activity-area h3 {
 		margin: 0;
 		padding: 10px 0 10px 20px;
 	}
 	.recent-activity-area .members-container {
-		height: 149px;
+		height: 150px;
 	}
 	.recent-activity-area .members-container img {
-		margin: 5px 0 0 0;
+		margin: 20px 0 0 0;
+		padding: 0;
 	}
 	.recent-activity-area .members-text {
-		margin: 25px 0 0 0;
-		padding: 0 0 0 20px;
-		height: 40px;
+		margin: 40px 0 0 0;
+		padding: 0 0 0 13px;
 	}
 	.members-arrow {
-		margin: 25px 0 0 0;
-		padding: 10px 0 0 0;
+		margin: 40px 0 0 0;
+		padding: 8px 0 0 0;
 	}
 
 
