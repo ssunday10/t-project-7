@@ -174,7 +174,7 @@ const user = document.getElementById("userField");
 const message = document.getElementById("messageField");
 const send = document.getElementById("send");
 
-send.addEventListener('click', () => {
+user.addEventListener('click', () => {
     if (user.value === "" && message.value === " "){
         alert("Please fill out user and message fields before sending");
     } else if (user.value === " ") {
@@ -237,3 +237,9 @@ cancel.addEventListener('click', (e) => {
     profileToggle.checked = false;
     timezoneToggle.value = 'Default';
 });
+
+// traffic line graphs 
+
+document.getElementById('hourly').onclick = function() {
+    timeFrame();
+};
