@@ -366,6 +366,8 @@
 	.social-container-instagram,
 	.social-container-twitter {
 		border: 3px solid lightgrey;
+		display: flex;
+		align-items: center;
 	}
 
 
@@ -396,7 +398,6 @@
 		height: 100px;
 	}
 	.social-container-facebook .social-image {
-		float: left;
 		margin: 12px 0 0 8px;
 		width: 70px;
 		height: 70px;
@@ -436,7 +437,6 @@
 		height: 100px;
 	}
 	.social-container-instagram .social-image {
-		float: left;
 		margin: 12px 0 0 8px;
 		width: 70px;
 		height: 70px;
@@ -473,7 +473,6 @@
 		height: 100px;
 	}
 	.social-container-twitter .social-image {
-		float: left;
 		margin: 12px 0 0 8px;
 		width: 70px;
 		height: 70px;
@@ -915,7 +914,7 @@
 				"navbar main";
 	}
 	.traffic-area,
-	.social-container-area {
+	.social-container {
 		grid-column: 1 / span 2;
 	}
 	.traffic-header {
@@ -1198,9 +1197,8 @@
 		height: 200px;
 	}
 
-	.widget-container-half {
-		float: left;
-	}
+	/* .widget-container-half {
+	} */
 
 	/* SOCIAL STATS AREA */
 	.social-container-area .social-heading {
