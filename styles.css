@@ -870,6 +870,7 @@
 	/* The Side Nav */
 	.sidebar-nav-icons {
 		display: inline-block;
+		width: 100vh;
 	}
 
 	.sidebar-nav-icons ul {
