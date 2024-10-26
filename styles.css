@@ -635,7 +635,7 @@
 	}
 	.message-user-area .widget-container {
 		margin: 0 auto;
-		display: block;
+		display: flex;
 		width: 95%;
 	}
 	.message-user-area .widget-container input {
@@ -849,6 +849,10 @@
 																			/* TABLET */
 @media screen and (min-width: 768px) {
 
+
+
+
+
 	.navbar {
 		height: 60px;
 		border: none;
@@ -870,7 +874,6 @@
 	/* The Side Nav */
 	.sidebar-nav-icons {
 		display: inline-block;
-		width: 100vh;
 	}
 
 	.sidebar-nav-icons ul {
@@ -1085,8 +1088,27 @@
 		margin: 0;
 	}
 
-	
+	.form-field,
+	.form-area, 
+	.button-primary {
+		height: 80%;
+		width: 100%;
+		display: inline-flex;
+		flex-wrap: wrap;
+		background-color: transparent;
+		justify-content: space-around;
+		font-size: 15px;
+		margin: 0;
+		padding: 18px 20px 18px 10px;
+		border-radius: 5px;
+		
+	}
 
+	.button-primary {
+		background-color: #8282ee;
+		height: 80%;
+		color: white;
+	}
 
 	/* SETTINGS AREA */
 	.settings-area {

@@ -9,7 +9,7 @@ bell.addEventListener("click", () => {
 });
 
 
-function alert() {
+function button() {
     const button = document.querySelector('.tooltip span');
     if(button.style.display === "none"){
         button.style.display = "block";
@@ -175,9 +175,9 @@ let mobileChart = new Chart(mobileCanvas, {
 const user = document.getElementById("userField");
 const message = document.getElementById("messageField");
 const send = document.getElementById("send");
-send.addEventListener('click', () => {
+send.addEventListener('click', (event) => {
+    event.preventDefault();
     if (user.value === "" && message.value === ""){
-        preventDefault();
         alert("Please fill out user and message fields before sending");
     } else if (user.value === "") {
         alert("Please make sure you fill in the user field");
