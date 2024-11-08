@@ -1,15 +1,12 @@
 * {
 	box-sizing: border-box;
 }
-
 .header {
 	grid-area: header;
 }
-
-.navigation {
+.navbar {
 	grid-area: navigation;
 }
-
 .main {
 	grid-area: main;
 }
@@ -40,18 +37,13 @@
 	43% { transform: rotate(0); }
 	100% { transform: rotate(0); }
   }
-
   .bell-icon:hover {
 	animation: ring 4s .7s ease-in-out infinite;
 	transform-origin: 50% 4px;
 }
-  
 
+																	/* MOBILE CSS */
 
-
-/* Mobile css */
-@media screen and (min-width: 320px) { 
-	
 	.grid-container {
 		margin: 0;
 		display: grid;
@@ -59,12 +51,12 @@
 		grid-template-rows: auto;
 		grid-template-areas: 
 						"header"
-						"navbar"
+						"navigation"
 						"main";
 	}
 
-
 	/* The main navbar */
+
 	.navbar {
 		background-color: #8282ee;
 		grid-area: navigation;
@@ -123,7 +115,6 @@
 		position: absolute;
 		z-index: 1;
 	}
-	 
 	.tooltip .tooltext {
 		width: 120px;
 		top: 100%;
@@ -146,7 +137,6 @@
 		color: white;
 		text-decoration: none;
 	}
-
 	.navbar .student img {
 		border-radius: 20px 20px;
 		height: 40px;
@@ -167,9 +157,8 @@
 		height: 40px;
 	}
 
-
-
 	/* SIDE NAVBAR */
+
 	.sidebar-nav-icons {
 		background-color: #414177;
 		fill: #FFFFFF;
@@ -204,15 +193,12 @@
 		height: 30px;
 		width: 30px;
 	}
-
-
 	.flex-container {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
 	}
-
 
 	.Dashboard-area {
 		/* border: 2px solid hsl(180, 58%, 51%); */
@@ -235,8 +221,8 @@
 		padding: 30px;
 	}
 	
-
 	/* THE ALERTS AREA */
+
 	.alert {
 		border-radius: 5px;
 		display: block;
@@ -263,8 +249,8 @@
 		margin: 0;
 	}
 
-
 	/* TRAFFIC AREA */
+
 	.traffic-area {
 		border-bottom: 1px solid lightgrey;
 		width: 100%;
@@ -307,9 +293,8 @@
 		border-radius: 18px;
 	}
 
-	
-
 	/* DAILY TRAFFIC AREA */
+
 	.Daily {
 		border-bottom: 1px solid lightgrey;
 		margin: 0;
@@ -328,9 +313,8 @@
 		
 	}
 
-
-
 	/* MOBILE USERS AREA */
+
 	.mobile-users-area {
 		border-bottom: 1px solid lightgrey;
 		margin: 0;
@@ -345,8 +329,8 @@
 		padding: 15px 0 15px 10px;
 	}
 
-
 	/* SOCIAL CONTAINER AREA */
+
 	.social-container-area {
 		margin: 0;
 		width: 100%;
@@ -360,8 +344,6 @@
 		font-weight: 600;
 		padding: 15px 0 15px 0;
 	}
-
-
 	.social-container-facebook,
 	.social-container-instagram,
 	.social-container-twitter {
@@ -369,8 +351,6 @@
 		display: flex;
 		align-items: center;
 	}
-
-
 	.social-image {
 		width: 40px;
 		height: 40px;
@@ -388,8 +368,8 @@
 		fill: white;
 	}
 
-
 	/* SOCIAL CONTAINER FACEBOOK */
+
 	.social-container-facebook {
 		border-radius: 5px;
 		margin: auto;
@@ -425,8 +405,8 @@
 		color: grey;
 	}
 
-
 	/* SOCIAL CONTAINER INSTAGRAM */
+
 	.social-container-instagram {
 		border-radius: 5px;
 		margin: auto;
@@ -463,8 +443,8 @@
 		color: grey;
 	}
 
-
 	/* SOCIAL CONTAINER TWITTER */
+
 	.social-container-twitter {
 		border-radius: 5px;
 		margin: auto;
@@ -499,8 +479,8 @@
 		color: grey;
 	}
 	
-
 	/* NEW MEMBERS AREA */
+
 	.new-members-area {
 		border-top: 1px solid lightgrey;
 		margin: 0 auto;
@@ -562,6 +542,7 @@
 	}
 
 	/* THIS IS THE DATE */
+
 	.new-members-area .members-container p {
 		margin: 0;
 		padding: 0;
@@ -570,9 +551,8 @@
 		text-align: center;
 	}
 
-
-
 	/* RECENT ACTIVITY AREA */
+
 	.recent-activity-area {
 		border-top: 2px solid lightgrey;
 		margin: 0 auto;
@@ -617,9 +597,8 @@
 		color: white;
 	}
 
- 
-
 	/* MESSAGE USER AREA */
+
 	.message-user-area {
 		width: 100%;
 		border-top: 2px solid lightgrey;
@@ -686,8 +665,8 @@
 		background-color: #8282ee;
 	}
 
-
 	/* SETTINGS AREA */
+
 	.settings-area {
 		margin: 0 auto;
 		display: block;
@@ -702,6 +681,7 @@
 	}
 
 	/* THE SETTINGS TOGGLE AREA */
+
 	.settings-toggle-area {
 		margin: 0;
 		padding: 0;
@@ -791,9 +771,6 @@
 	.toggle input:checked~.labels::before {
 		opacity: 1;
 	}
- 
-
-
 	.form-field .timezone {
 		border: 2px solid lightgrey;
 		border-radius: 3px;
@@ -809,8 +786,8 @@
 		border: 1px solid green;
 	}
 
-
 	/* SETTINGS BUTTON AREA */
+
 	.settings-button {
 		margin: 0 auto;
 		word-spacing: 18px;
@@ -839,45 +816,22 @@
 		font-family: 'Martel-Sans', sans-serif;
 		font-size: 17px;
 	}
-
 	.widget-container-full,
 	.widget-container-half {
 		width: 95vw;
 	}
-}
 
 																			/* TABLET */
 @media screen and (min-width: 768px) {
 
 	.grid-container {
 		display: grid;	
-		grid-template-columns: 100%;
-		grid-template-rows: auto;
+		grid-template-columns: 55px 1fr;
 		grid-template-areas:
-			"header"
-			"navbar"
-			"main";
-		
-	}
-	.header {
-		grid-area: header;
-		}
-		.navigation {
-		grid-area: navigation;
-		}
-		.main {
-		grid-area: main;
-		}
-
-		.grid-container {
-			grid-template-columns: 55px 1fr;
-			grid-template-areas:
 			"header header"
-			"navbar main";
-			}
-	
-
-	.navbar {
+			"navigation main";	
+	}
+	.navbar { 
 		height: 60px;
 		border: none;
 	}
@@ -893,9 +847,8 @@
 	.navbar #item-3 {
 		padding-left: 0;
 	}
-
-
 	/* The Side Nav */
+
 	.sidebar-nav-icons {
 		display: inline-block;
 	}
@@ -920,26 +873,13 @@
 		padding-left: 15px;
 		width: 20%;
 	}
-	
-
-
 	.alert {
 		display: grid;
 		grid-column: 1 / span 2;
 	}
-
-
 	.main {
 		display: grid;
 		grid-template-columns: 50%;
-	}
-
-
-	.grid-container {
-		grid-template-columns: 55px 1fr;
-		grid-template-areas: 
-				"header header"
-				"navbar main";
 	}
 	.traffic-area,
 	.social-container {
@@ -959,16 +899,12 @@
 	.traffic-nav {
 		width: 50%;
 	}
-
 	.traffic-header ul li {
 		padding: 10px;
 	}
 	.widget-container-full {
 		padding-left: 16px;
 	}
-
-	
-
 	.daily,
 	.new-members-area,
 	.message-user-area {
@@ -979,7 +915,6 @@
 		padding-left: 5px;
 		width: 45vw;
 	}
-
 	.daily {
 		border-right: 1px solid lightgrey;
 	}
@@ -988,45 +923,25 @@
 		width: auto;
 		padding: 10px 0 10px 10px;
 	}
-
 	.mobile-users-area,
 	.recent-activity-area,
 	.settings-area {
 		grid-column: 2 / span 1;
 		border-bottom: 1px solid lightgrey;
 	}
-	
 	.widget-container-full {
 		width: 90vw;
 	}
-	
-
-	
-
 	.social-container-area .social-heading {
 		margin: 0;
 		padding: 13px 0 8px 20px;
 	}
-	.social-cards-container {
-		display: flex;
-		align-items: center;
-		justify-content: space-around;
-		margin: 0 14px 0 14px;
-	}
-
 	.social-cards-container section {
-		margin: 5px;
-		
+		margin: 5px;	
 	}
-	
-
-	
-	
-
-
-
 
 	/* NEW MEMBERS AREA */
+
 	.new-members-area {
 		grid-column: 1 / span 2;
 	}
@@ -1067,13 +982,9 @@
 		padding: 16px 0 0 0;
 		height: 44px;
 	}
-	.example {
-		color: #7477BF;
-	}
- 
-
 
 	/* RECENT ACTIVITY AREA */
+
 	.recent-activity-area {
 		grid-column: 1 / span 2;
 		border-bottom: 1px solid lightgrey;
@@ -1101,8 +1012,8 @@
 		height: 40px;
 	}
 
-
 	/* MESSAGE USER AREA */
+
 	.message-user-area {
 		grid-column: 1 / span 2;
 		padding-bottom: 17px;
@@ -1111,7 +1022,6 @@
 		padding: 10px 0 10px 18px;
 		margin: 0;
 	}
-
 	.form-field,
 	.form-area, 
 	.button-primary {
@@ -1127,7 +1037,6 @@
 		border-radius: 5px;
 		
 	}
-
 	.button-primary {
 		background-color: #8282ee;
 		height: 80%;
@@ -1135,6 +1044,7 @@
 	}
 
 	/* SETTINGS AREA */
+
 	.settings-area {
 		grid-column: 1 / span 2;
 	}
@@ -1165,27 +1075,19 @@
 	.settings-button #cancel {
 		width: 46.0%;
 	}
-
 	#timezone {
 		width: 100%;
 		padding: 15px;
 		border-radius: 5px;
 		background-color: transparent;
 	}
-
 }
-
 
 
 																			/* DESKTOP VIEW */
 @media screen and (min-width: 1024px) {
 
-	
-	.main {
-		display: grid;
-	}
-
-	.Dashboard-area .headline {
+	.dashboard-area .headline {
 		margin: 0;
 		padding-left: 11px;
 		width: 98%;
@@ -1194,8 +1096,8 @@
 		width: 100%;
 	}
 
-
 	/* TRAFFIC CHART AREA */
+
  	.traffic-area {
 		padding: 0 0 20px 0;
  	}
@@ -1222,8 +1124,8 @@
 		margin: 0;
  	}
 
-
 	/* DOUGHNUT CHART AREA */
+
  	.daily h3,
 	.mobile-users-area h3 {
 		width: 100%;
@@ -1233,7 +1135,9 @@
 	.daily-traffic {
 		grid-column: 1;
 	}
+
 	/* MOBILE USERS CHART AREA */
+
 	.mobile-users-area {
 		grid-column: 2;
 		padding: 0 0 20px 19px;
@@ -1246,10 +1150,8 @@
 		height: 200px;
 	}
 
-	/* .widget-container-half {
-	} */
-
 	/* SOCIAL STATS AREA */
+
 	.social-container-area .social-heading {
 		margin: 0;
 		padding: 13px 0 8px 20px;
@@ -1282,9 +1184,6 @@
 		margin: 40px 0 0 0;
 		padding: 8px 0 0 0;
 	}
-
-	
-
 	.recent-activity-area {
 		grid-column: 2;
 		padding: 20px 0;
@@ -1308,8 +1207,6 @@
 		margin: 40px 0 0 0;
 		padding: 8px 0 0 0;
 	}
-
-
 	.message-user-area {
 		border: 1px solid lightgrey;
 		grid-column: 2;
@@ -1322,8 +1219,6 @@
 	.message-user-area .widget-container textarea {
 		margin-bottom: 37px;
 	}
-
-
 	.settings-area {
 		border: 1px solid lightgrey;
 		grid-column: 2;
