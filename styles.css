@@ -1100,8 +1100,9 @@
 		width: 46.0%;
 	}
 	#timezone {
-		width: 100%;
+		width: 95%;
 		padding: 15px;
+		margin: 10px;
 		border-radius: 5px;
 		background-color: transparent;
 	}
@@ -1243,23 +1244,5 @@
 	.message-user-area .widget-container textarea {
 		margin-bottom: 37px;
 	}
-	.settings-area {
-		border: 1px solid lightgrey;
-		grid-column: 2;
-	}
-	.settings-toggle-area {
-		margin-bottom: 15px;
-	}
-	.settings-area .toggle-container {
-		width: 55%;
-		padding-left: 2px;
-	}
-	.settings-area p {
-		font-size: 15px;
-	}
-	.settings-area .timezone {
-		width: 100%;
-		margin-top: 53px;
-		margin-bottom: 13px;
-	}
+	
 }
