@@ -42,7 +42,6 @@
 	transform-origin: 50% 4px;
 }
 
-																	/* MOBILE CSS */
 
 	.grid-container {
 		margin: 0;
@@ -180,18 +179,22 @@
 	.sidebar-nav-icons .home {
 		height: 30px;
 		width: 30px;
+		fill: white;
 	}
 	.sidebar-nav-icons .chart {
 		height: 30px;
 		width: 30px;
+		fill: white;
 	}
 	.sidebar-nav-icons .members {
 		height: 30px;
 		width: 30px;
+		fill: white;
 	}
 	.sidebar-nav-icons .settings {
 		height: 30px;
 		width: 30px;
+		fill: white;
 	}
 	.flex-container {
 		display: flex;
@@ -219,6 +222,7 @@
 		height: 0;
 		margin: 0;
 		padding: 30px;
+		
 	}
 	
 	/* THE ALERTS AREA */
@@ -851,10 +855,15 @@
 
 	.sidebar-nav-icons {
 		display: inline-block;
+		padding: 15px 10px;
+		margin: 5px;
+		justify-content: space-evenly;
+		align-items: left;
 	}
 
 	.sidebar-nav-icons ul {
 		display: inline-block;
+		justify-content: space-evenly;
 	}
 	.sidebar-nav-icons li {
 		height: 50px;
@@ -932,9 +941,15 @@
 	.widget-container-full {
 		width: 90vw;
 	}
+
+	.social-cards-container {
+		display: flex;
+		flex: 1;
+	}
 	.social-container-area .social-heading {
 		margin: 0;
 		padding: 13px 0 8px 20px;
+		
 	}
 	.social-cards-container section {
 		margin: 5px;	
@@ -1014,14 +1029,23 @@
 
 	/* MESSAGE USER AREA */
 
-	.message-user-area {
+	.message {
 		grid-column: 1 / span 2;
-		padding-bottom: 17px;
+		margin: 10px;
+		padding: 10px;
+		width: 95%;
 	}
-	.message-user-area h3 {
-		padding: 10px 0 10px 18px;
-		margin: 0;
+	.message h3 {
+		padding: 10px 0 10px 14px;
 	}
+	.message .widget-container textarea {
+		margin-bottom: 37px;
+	}
+
+	.message .widget-container textarea {
+		margin-bottom: 37px;
+	}
+
 	.form-field,
 	.form-area, 
 	.button-primary {
