@@ -236,6 +236,7 @@ cancel.addEventListener('click', (e) => {
     localStorage.removeItem('email');
     localStorage.removeItem('profilePublic');
     localStorage.removeItem('timezone');
+    
 
     emailToggle.checked = false;
     profileToggle.checked = false;

@@ -682,10 +682,7 @@
 		font-size: 18px;
 		color: white;
 	}
-	.message-user-area #send:hover {
-		cursor: pointer;
-		background-color: #8282ee;
-	}
+	
 
 	/* SETTINGS AREA */
 
@@ -894,8 +891,6 @@
 
 	.Dashboard-area {
 		grid-column: 1 / span 2;
-		justify-content: center;
-		width: 100%;
 		margin: 0;
 	
 	}
@@ -904,10 +899,16 @@
 		width: 20%;	
 	}
 	.tab {
+		flex: initial;
+		flex-grow: 1;
+	  }
+	  
+	  .main-header {
 		grid-column: 1 / span 2;
-		justify-content: center;
-		width: 100%;
-	}
+		flex-wrap: no-wrap;
+		justify-content: initial;
+	  }
+
 	.alert {
 		display: grid;
 		grid-column: 1 / span 2;
