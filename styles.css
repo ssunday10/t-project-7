@@ -894,6 +894,8 @@
 
 	.Dashboard-area {
 		grid-column: 1 / span 2;
+		justify-content: center;
+		width: 100%;
 		margin: 0;
 	
 	}
@@ -902,9 +904,9 @@
 		width: 20%;	
 	}
 	.tab {
-		flex-basis: 100%;
-		flex: wrap;
-		margin: 30px;
+		grid-column: 1 / span 2;
+		justify-content: center;
+		width: 100%;
 	}
 	.alert {
 		display: grid;
@@ -1136,12 +1138,7 @@
 																			/* DESKTOP VIEW */
 @media screen and (min-width: 1024px) {
 
-	.tab {
-		flex: 1;
-		flex: wrap;
-		flex-basis: 100%;
 
-	}
 	.alert {
 		width: 100%;
 	}
@@ -1176,7 +1173,7 @@
 
 	/* DOUGHNUT CHART AREA */
 
- 	.daily h3,
+	.daily h3,
 	.mobile-users-area h3 {
 		width: 100%;
 		padding: 10px 0 20px 15px;
@@ -1258,10 +1255,9 @@
 		padding: 8px 0 0 0;
 	}
 	.message {
-		border: 1px solid lightgrey;
 		grid-column: 1;
 		margin: 0;
-		padding: 0;
+		padding: 19px;
 	}
 	.message-user-area h3,
 	.settings-area h3 {
@@ -1271,7 +1267,7 @@
 		margin-bottom: 37px;
 	}
 	.settings-area {
-		border: 1px solid lightgrey;
+		border-left: 1px solid lightgrey;
 		grid-column: 2;
 		margin: 0;
 		padding: 0;
