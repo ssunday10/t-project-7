@@ -840,6 +840,14 @@
 		width: 95vw;
 	}
 
+	#timezone {
+		width: 95%;
+		padding: 15px;
+		margin: 10px;
+		border-radius: 5px;
+		background-color: transparent;
+	}
+
 																			/* TABLET */
 @media screen and (min-width: 768px) {
 
