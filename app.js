@@ -203,8 +203,8 @@ function setValues() {
     // Timezone list
     const timeZone = localStorage.getItem("timezone");
 
-    document.getElementById("email").checked = emailToggle;
-    document.getElementById("Profile-To-Public").checked = profileToggle;
+    document.getElementById("email").checked =  JSON.parse(emailToggle);
+    document.getElementById("Profile-To-Public").checked = JSON.parse(profileToggle);
     document.getElementById("timezone").value = timeZone;
 }
 
@@ -228,10 +228,10 @@ save.addEventListener('click', (e) => {
 
 // This is the 'press the cancel button to clear local storage'.
 cancel.addEventListener('click', (e) => {
-    const cancel = document.getElementById('#cancel');
-    let emailToggle = document.getElementById('#email');
-    let profileToggle = document.getElementById('#Profile-To-Public');
-    let timezoneToggle = document.getElementById('#timezone');
+    const cancel = document.getElementById('cancel');
+    let emailToggle = document.getElementById('email');
+    let profileToggle = document.getElementById('Profile-To-Public');
+    let timezoneToggle = document.getElementById('timezone');
 
     localStorage.removeItem('email');
     localStorage.removeItem('profilePublic');
